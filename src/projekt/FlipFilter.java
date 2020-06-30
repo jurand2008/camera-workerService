@@ -20,7 +20,7 @@ import org.opencv.imgproc.Imgproc;
         public static BufferedImage toFlipMy(BufferedImage input, BufferedImage dst, int sw, int sh, int ew, int eh) {
 
 
-//for(int k = 0; k < 240; k++)}
+
             for(int y = sh, my = 480 - sh - 1; y < eh / 2 ; y++, my--){
                 int k = 0;
                 for (int x = sw, L = 640 - x - 1; x <( ew/2)  && x >= sw + k; k++,L--,x++) {
@@ -40,4 +40,3 @@ import org.opencv.imgproc.Imgproc;
 
         }
 
-  //  for (int x = sw+k, L = 640 - sw - 1; x < 320 - k && x >= sw + k; k++,L--)
